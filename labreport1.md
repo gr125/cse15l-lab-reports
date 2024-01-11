@@ -18,7 +18,7 @@ working directory: /home/
 working directory: /home/lecture1/
 ![](/labreport1_screenshots/cd_filearg.png)
 - The current working directory does not change, and the following message is printed: "bash: cd: [file path]: Not a directory"
-- This is an error; *cd* is used to change directories, and so file paths cannot be used as arguments. 
+- **This is an error:** *cd* is used to change directories, and so file paths cannot be used as arguments. 
 
 # *ls*
 
@@ -52,7 +52,7 @@ working directory: /home/
 working directory: /home/
 ![](/labreport1_screenshots/cat_dirarg.png)
 - Prints the following message: "cat: [directory path]: Is a directory"
-- This is an error: the *cat* command only takes no arguments or file path arguments, as it cannot read anything from a directory. 
+- **This is an error:** the *cat* command only takes no arguments or file path arguments, as it cannot read anything from a directory. 
 
 **Example 3: file path as argument**
 working directory: /home/
