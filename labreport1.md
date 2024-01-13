@@ -66,8 +66,5 @@
 (working directory: `/home`)
 ![](/labreport1_screenshots/cat_filearg.png)
 - When `cat` is used with a file path as an argument, the contents of the file are printed to the output.
-- In the given example, the `cat` command with the path `lecture1/messages/en-us.txt` prints 
-```Hello World!
-
-``` 
+- In the given example, the `cat` command with the path `lecture1/messages/en-us.txt` prints `Hello World!` and a newline, which are the contents of the `en-us.txt` file
 - This is not an error. 
