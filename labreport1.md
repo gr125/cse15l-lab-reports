@@ -1,4 +1,4 @@
-# Lab Report 1: Using *cd*, *ls* and *cat*
+# Lab Report 1
 
 # `cd`
 
@@ -51,17 +51,22 @@
 **Example 1: no arguments** 
 (working directory: `/home`)
 ![](/labreport1_screenshots/cat_noarg.png)
-- Reads the user input and prints it.  
-- Not an error. 
+- When `cat` is used with no arguments, the terminal reads the user input and prints it until the command execution is halted.
+- In the given example, the `cat` command printed back the user input, such as `j` and `hello`. The same behavior occured when directory paths like `lecture1/` and file paths like `lecture1/messages/en-us.txt` were written as inputs. The command only stopped with the `^C` keyboard shortcut, which is used to halt execution. 
+- This is not an error. 
 
 **Example 2: directory path as argument** 
 (working directory: `/home`)
 ![](/labreport1_screenshots/cat_dirarg.png)
-- Prints the following message: `cat: [directory path]: Is a directory`
+- When `cat` is used with a directory path as an argument, the following message is printed: `cat: [directory path]: Is a directory`.
+- In the given example, the `cat` command with the relative path `lecture1/` printed the message `cat: lecture1/: Is a directory`.
 - **This is an error:** the `cat` command only takes no arguments or file path arguments, as it cannot read anything from a directory. 
 
 **Example 3: file path as argument** 
 (working directory: `/home`)
 ![](/labreport1_screenshots/cat_filearg.png)
-- Prints the contents of the file. 
-- Not an error. 
+- When `cat` is used with a file path as an argument, the contents of the file are printed to the output.
+- In the given example, the `cat` command with the path `lecture1/messages/en-us.txt` prints 
+```Hello World!
+``` 
+- This is not an error. 
