@@ -52,7 +52,7 @@
 (working directory: `/home`)
 ![](/labreport1_screenshots/cat_noarg.png)
 - When `cat` is used with no arguments, the terminal reads the user input and prints it until the command execution is halted.
-- In the given example, the `cat` command printed back the user input, such as `j` and `hello`. The same behavior occured when directory paths like `lecture1/` and file paths like `lecture1/messages/en-us.txt` were written as inputs. The command only stopped with the `^C` keyboard shortcut, which is used to halt execution. 
+- In the given example, the `cat` command printed back the user input, such as `j` and `hello`. The same behavior occured when directory paths like `lecture1/` and file paths like `lecture1/messages/en-us.txt` were written as inputs. The command execution stopped with the `^C` keyboard shortcut, which is used to halt execution. 
 - This is not an error. 
 
 **Example 2: directory path as argument** 
@@ -68,5 +68,6 @@
 - When `cat` is used with a file path as an argument, the contents of the file are printed to the output.
 - In the given example, the `cat` command with the path `lecture1/messages/en-us.txt` prints 
 ```Hello World!
+
 ``` 
 - This is not an error. 
