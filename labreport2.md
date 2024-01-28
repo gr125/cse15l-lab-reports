@@ -85,4 +85,4 @@ This screenshot shows the process of navigating to the path of the public SSH ke
 
 ## Part 3
 
-From the lab in week 2, I learned how to work with URLs and process site queries. Using the `URI` class, you can get the path and query components of URLs and use that information to make changes (ex. in the `ChatServer` class the string containing the messages is manipulated). 
+From the lab in week 2, I learned how to work with URLs and process site queries. Using the `URI` class, you can get the path and query components of URLs and use that information to make changes (ex. in the `ChatServer` class the string containing the messages is manipulated). Using the `URLHandler` interface and the `Server` class, the week 2 lab task was to implement a simple search engine that could add text to a list and search for strings in that list. Specifically, I did not know that the parts of URLs (paths, queries) could be manipulated to implement functions that I have seen in many web pages. 
