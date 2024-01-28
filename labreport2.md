@@ -51,7 +51,7 @@ class ChatServer {
 
 **Adding a message:** 
 ![](/labreport2_screenshots/addmessage1.png)
-- When `/add-message` is used, the `handleRequest()` method is called. 
+- When `/add-message` is used, the `handleRequest()` method in the `Handler` class is called. 
 - The `handleRequest()` method takes the page URL (a URI object) as an argument. 
 - In the class, the string `S` contains all the messages that have been added; at this moment, the string is empty (`""`). 
 - As a result of this request, the user and message from the query is added to the string `S` in the format `<user>: <message>\n`. The value of `S` changes from `""` to `"jpolitz: Hello"`
@@ -59,7 +59,7 @@ class ChatServer {
 
 **Adding another message:**
 ![](/labreport2_screenshots/addmessage2.png)
-- When `/add-message` is used, the `handleRequest()` method is called. 
+- When `/add-message` is used, the `handleRequest()` method in the `Handler` class is called. 
 - The `handleRequest()` method takes the page URL (a URI object) as an argument. 
 - In the class, the string `S` contains all the messages that have been added (`"jpolitz: Hello\n"` since a message has already been added). 
 - As a result of this request, the user and message from the query is added to the string `S` in the format `<user>: <message>\n`. The value of `S` changes from `"jpolitz: Hello\n"` to `"jpolitz: Hello\nyash: How+are+you"`
