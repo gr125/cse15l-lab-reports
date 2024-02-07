@@ -72,9 +72,9 @@ being displayed to the page.
 
 ## Part 2
 
-**Private key's absolute path:** `/Users/gauri/.ssh/id_rsa.pub`
+**Private key's absolute path:** `/Users/gauri/.ssh/id_rsa`
 ![](/labreport2_screenshots/privatekeypath.png)
-This screenshot shows the absolute path of the private SSH key located on my local computer. The terminal on the left shows the generation of the key and gives its path as `/Users/gauri/.ssh/id_rsa.pub`. The terminal on the right shows the process of navigating to the path of the private SSH key from the home directory of `/Users/gauri`. Once in the `.ssh/` directory, the `ls` commands shows the `id_rsa.pub` file, where the key is stored. 
+This screenshot shows the absolute path of the private SSH key located on my local computer. The terminal on the left shows the generation of the key and gives its path as `/Users/gauri/.ssh/id_rsa`. The terminal on the right shows the process of navigating to the path of the private SSH key from the home directory of `/Users/gauri`. Once in the `.ssh/` directory, the `ls` commands shows the `id_rsa` file, where the key is stored. 
 
 **Public key's absolute path:** `/home/linux/ieng6/oce/95/grenjith/.ssh/authorized_keys`
 ![](/labreport2_screenshots/publickeypath.png)
