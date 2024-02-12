@@ -40,9 +40,9 @@ after:
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
-      newArray[arr.length - i - 1] = arr[i];
+      newArray[arr.length - i - 1] = arr[i]; // this line changed
     }
-    return newArray;
+    return newArray; // and this one
   }
 ```
 The code assigns the values of `newArray` (0s) to `arr` and returns `arr`, returning an array of 0s as a result. By switching the assignment such that values of `arr` are assigned to `newArray` and returning `newArray`, values are assigned correctly and the correct reversed array is returned. 
@@ -228,7 +228,12 @@ gauri@Renjiths-MacBook-Pro ~ pwd
 /Users/gauri/Desktop/CSE15L/lab_week4/docsearch/technical
 
 gauri@Renjiths-MacBook-Pro ~ grep -m 5 "HIV" ./plos/pmed.0010041.txt
-2
+        The devastating effects of HIV infection worldwide are reason enough for AIDS
+        control HIV replication after two short treatment interruptions [1]. This report generated
+        stimulated immune response to the patient's HIV infection.
+        led to induction of HIV-specific proliferative responses similar to those that had been
+        observed in patients with long-term, non-progressing HIV [2]. This led Rosenberg and
+
 ```
 
 Here, `grep -m 5` prints the first 5 lines in `./plos/pmed.0010041.txt` that match `"HIV"` when the working directory is `/Users/gauri/Desktop/CSE15L/lab_week4/docsearch`. The `-m 5` option causes the `grep` command to stop reading the file after 5 lines are found, which is useful because it significantly decreases the output printed to the terminal.  
