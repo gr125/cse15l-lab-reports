@@ -53,7 +53,7 @@ The code assigns the values of `newArray` (0s) to `arr` and returns `arr`, retur
 
 **Option 1:** `-c` 
 
-The `-c` option prints the number of matching lines per file instead of the file lines (from ![Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
+The `-c` option prints the number of matching lines per file instead of the file lines (from [Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
 
 ```
 gauri@Renjiths-MacBook-Pro ~ pwd
@@ -75,7 +75,7 @@ Here, `grep -c` is used to find the number of lines with `"HIV"` in `./plos/pmed
 
 **Option 2:** `-n` 
 
-The `-n` option includes the line number for each line that matches the search pattern (from ![Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
+The `-n` option includes the line number for each line that matches the search pattern (from [Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
 
 ```
 gauri@Renjiths-MacBook-Pro ~ pwd
@@ -118,7 +118,7 @@ Here, `grep -n` is used to find the lines with `"HIV"` in `./plos/pmed.0010041.t
 
 **Option 3:** `-r` 
 
-The `-r` option recursively searches each file in the directory path given for the pattern given (from ![Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
+The `-r` option recursively searches each file in the directory path given for the pattern given (from [Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
 
 ```
 gauri@Renjiths-MacBook-Pro ~ pwd
@@ -221,7 +221,7 @@ When not provided with a directory to search through, the `grep -r` command find
 
 **Option 4:** `-m [NUM]`
 
-The `-m [NUM]` option stops reading a file after NUM matching lines are found (from ![Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
+The `-m [NUM]` option stops reading a file after NUM matching lines are found (from [Linux manual](https://man7.org/linux/man-pages/man1/grep.1.html))
 
 ```
 gauri@Renjiths-MacBook-Pro ~ pwd
