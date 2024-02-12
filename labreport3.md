@@ -4,19 +4,19 @@
 
 **Failure-inducing input (as JUnit test)**
 ```
-@Test
-public void testAverageWithoutLowestRepeats() {
-  double[] input1 = {2, 2, 3, 7};
-  assertEquals(4.0, ArrayExamples.averageWithoutLowest(input1), 0.001);
-}
+  @Test
+  public void testReversed() {
+    int[] input1 = {1, 2};
+    assertArrayEquals(new int[]{2, 1}, ArrayExamples.reversed(input1));
+  }
 ```
 
 **Success-inducing input (as JUnit test)**
 ```
   @Test
-  public void testReversedOneElement() {
-    int[] input1 = {1};
-    assertArrayEquals(new int[]{1}, ArrayExamples.reversed(input1));
+  public void testReversedEmpty() {
+    int[] input1 = {};
+    assertArrayEquals(new int[]{}, ArrayExamples.reversed(input1));
   }
 ```
 
