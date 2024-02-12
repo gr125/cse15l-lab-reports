@@ -21,6 +21,7 @@
 ```
 
 **Symptom**
+![](/labreport3_screenshots/junit_tests.png)
 ![](/labreport3_screenshots/symptoms.png)
 
 **The bug** 
