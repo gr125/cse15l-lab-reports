@@ -23,7 +23,7 @@ Keys pressed: `cd<space>l<tab><enter>`, `bash<space>t<tab><enter>`
 Keys pressed: `vim<space><shift>l<tab>.<tab><enter>`, `/cha<enter>`, `jllxi2<esc>`, `<shift>;wq<enter>` 
 - I ran the `vim` command to edit the `ListExamples.java` file (typing 'L' and pressing `<tab>` and then pressing '.' and then `<tab>` autocompleted the file name). 
 - I then found the comment indicating the line to change by pressing `/` and then typing `cha` and pressing enter, effectively searching for the first occurence of the text string `cha` which was the comment. 
-- I then navigated to the exact position to change by pressing `jj` (equivalent to pressing down twice). I pressed `x` to delete the next character `1`. I then entered insert mode by pressing `i` and typed `2` to fix the test. I pressed `<esc>` to exit insert mode. 
+- I then navigated to the exact position to change by pressing `j` (equivalent to pressing `<down>`) and pressing `ll` (equivalent to pressing `<right>` twice). I pressed `x` to delete the next character `1`. I then entered insert mode by pressing `i` and typed `2` to fix the test. I pressed `<esc>` to exit insert mode. 
 - I saved the file and exited by typing `:wq` and pressing `<enter>`. 
 ![](/labreport4_screenshots/step4-1.png) 
 ^After running `vim ListExamples.java` 
