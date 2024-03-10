@@ -6,14 +6,14 @@
 
 | All values in frequency table returned by frequencyMap() are 1 |
 | ---- |
-| My frequencyMap() method is failing the testFrequencyMap() test. When I <br/>checked the JUnit output file after running the tester, it said that my <br/>method returned a HashMap that had all the correct keys but values of 1 <br/>for each of them. In my method, I put 1 in the HashMap for a key for <br/>each instance of the key. Am I missing something? <br/>Tester output<br/>![](/labreport5_screenshots/tester_output.png)<br/>JUnit output file contents<br/>![](/labreport5_screenshots/junit_output.png)|
+| My frequencyMap() method is failing the testFrequencyMap() test. When I <br/>checked the JUnit output file after running the tester, it said that my <br/>method returned a HashMap that had all the correct keys but values of 1 <br/>for each of them. In my method, I put 1 in the HashMap for a key for <br/>each instance of the key. Am I missing something? <br/><br/>Tester output<br/>![](/labreport5_screenshots/tester_output.png)<br/><br/>JUnit output file contents<br/>![](/labreport5_screenshots/junit_output.png)|
 
 ## 2: TA response
 
 | Double check the behavior of the HashMap put() method, and make sure you <br/>are using it correctly. You can also try running the tester on jdb and <br/>checking the contents of the HashMap each time you put in a value.|
 
 ## 3: Student debugging
-Output of jdb testing: the values are added the first time but stay the same. 
+Output of `jdb` testing: the values are added the first time but stay the same. 
 ```
 $ javac -g -cp .:lib/* *.java
 $ jdb -classpath .:lib/* org.junit.runner.JUnitCore ArrayTests
@@ -90,21 +90,21 @@ Tests run: 3,  Failures: 1
 
 The application exited
 ```
-Java documentation on put()
+Java documentation on `put()` (highlighted part is relevant to bug)
 ![](/labreport5_screenshots/put_javadocumentation.png)
 
-For each integer in the list, a value of 1 is put into the HashMap corresponding to a key of that integer. However, the next time the same integer shows up in the list, a value of 1 replaces the 1 that was already in the map instead of adding to the value. 
+**Bug description:** For each integer in the list, a value of 1 is put into the HashMap corresponding to a key of that integer. However, the next time the same integer shows up in the list, a value of 1 replaces the 1 that was already in the map instead of adding to the value. 
 
 ## 4: Setup
 
 ### File & directory structure:
 ![](/labreport5_screenshots/file_directory_structure.png)
-The current working directory should contain the `ArrayExamples.java`, `ArrayTests.java`, and `PublicTester.sh` files, and the `lib` directory that contains the `jar` files to run JUnit. The `grading-area` folder contains the `junit-output.txt` file that contains the output of `ArrayTests.java`; the directory and its contents are created after running `PublicTester.sh`.
+The current working directory should contain the `ArrayExamples.java`, `ArrayTests.java`, and `PublicTester.sh` files, and the `lib` directory that contains the `jar` files to run JUnit. The `.class` files are created as a result of running `PublicTester.sh`. The `grading-area` folder contains the `junit-output.txt` file that contains the output of `ArrayTests.java`; the directory and its contents are created after running `PublicTester.sh`.
 
 ### File contents
 
 #### `ArrayExamples.java`
-This file contains a class with methods related to arrays, adapted from the lab in week 4. The frequencyMap() method that I added is buggy. 
+This file contains a class with methods related to arrays, adapted from the lab in week 4. The `frequencyMap()` method that I added is buggy. 
 ```
 import java.util.HashMap;
 
@@ -143,7 +143,7 @@ public class ArrayExamples {
 ```
 
 #### `ArrayTests.java`
-This file contains a class to test the `ArrayExamples` class, also adapted from the week 4 lab. I added a method to test the frequencyMap() method. 
+This file contains a class to test the `ArrayExamples` class, also adapted from the week 4 lab. I added a method to test the `frequencyMap()` method. 
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
