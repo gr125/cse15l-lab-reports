@@ -6,7 +6,7 @@
 
 | All values in frequency table returned by frequencyMap() are 1 |
 | ---- |
-| My frequencyMap() method is failing the testFrequencyMap() test. When I <br/>checked the JUnit output file after running the tester, it said that my <br/>method returned a HashMap that had all the correct keys but values of 1 <br/>for each of them. In my method, I put 1 in the HashMap for a key for <br/>each instance of the key. Am I missing something? <br/><br/>Tester output<br/>![](/labreport5_screenshots/tester_output.png)<br/><br/>JUnit output file contents<br/>![](/labreport5_screenshots/junit_output.png)|
+| My frequencyMap() method is failing the testFrequencyMap() test. When I checked the JUnit output file after running the tester, it said that my method returned a HashMap that had all the correct keys but values of 1 for each of them. In my method, I put 1 in the HashMap for a key for each instance of the key. Am I missing something? <br/><br/>Tester output<br/>![](/labreport5_screenshots/tester_output.png)<br/><br/>JUnit output file contents<br/>![](/labreport5_screenshots/junit_output.png)|
 
 ## 2: TA response
 
